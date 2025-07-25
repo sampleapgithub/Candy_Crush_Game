@@ -1,0 +1,37 @@
+body {
+    background: url("./background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Title */
+h1 {
+    margin-top: 20px;
+    font-size: 2rem;
+}
+
+/* Game board container */
+#board {
+    width: 90vmin; /* keeps it square and responsive */
+    height: 90vmin;
+    max-width: 450px;
+    max-height: 450px;
+    background-color: lightblue;
+    border: 5px solid slategray;
+    border-radius: 10px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Each candy tile */
+#board img {
+    width: 11.11%;  /* 100 / 9 columns = 11.11% */
+    height: 11.11%;
+    object-fit: cover;
+    aspect-ratio: 1/1; /* keeps them square */
+}
